@@ -1,64 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220510 21:35:50.602" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220510 22:07:15.736" rpa="false" schemaversion="3">
 <suite id="s1" name="Title" source="C:\Users\ALAN LIEW\Downloads\robot2\title.robot">
 <test id="s1-t1" name="TC1" line="10">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220510 21:35:51.240" level="INFO">Opening browser 'chrome' to base url 'https://agoda.com'.</msg>
-<status status="PASS" starttime="20220510 21:35:51.239" endtime="20220510 21:36:00.098"/>
+<msg timestamp="20220510 22:07:16.367" level="INFO">Opening browser 'chrome' to base url 'https://agoda.com'.</msg>
+<status status="PASS" starttime="20220510 22:07:16.365" endtime="20220510 22:07:24.850"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220510 21:36:00.102" endtime="20220510 21:36:00.588"/>
+<status status="PASS" starttime="20220510 22:07:24.855" endtime="20220510 22:07:25.005"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220510 21:36:05.600" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220510 21:36:00.590" endtime="20220510 21:36:05.601"/>
+<msg timestamp="20220510 22:07:30.014" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220510 22:07:25.007" endtime="20220510 22:07:30.014"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${none}</arg>
 <arg>ESC</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220510 21:36:05.608" level="INFO">Sending key(s) ('ESC',) to page.</msg>
-<msg timestamp="20220510 21:36:05.608" level="INFO">Pressing special key ESCAPE to browser.</msg>
-<msg timestamp="20220510 21:36:05.609" level="INFO">Releasing special key ESCAPE.</msg>
-<status status="PASS" starttime="20220510 21:36:05.605" endtime="20220510 21:36:05.752"/>
+<msg timestamp="20220510 22:07:30.023" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg timestamp="20220510 22:07:30.023" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg timestamp="20220510 22:07:30.023" level="INFO">Releasing special key ESCAPE.</msg>
+<status status="PASS" starttime="20220510 22:07:30.020" endtime="20220510 22:07:30.440"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>XPATH://*[@id="SearchBoxContainer"]/div[1]/div/div[2]/div/div/div[1]/div/div/input</arg>
 <arg>kampar</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220510 21:36:05.764" level="INFO">Typing text 'kampar' into text field 'XPATH://*[@id="SearchBoxContainer"]/div[1]/div/div[2]/div/div/div[1]/div/div/input'.</msg>
-<status status="PASS" starttime="20220510 21:36:05.762" endtime="20220510 21:36:06.269"/>
+<msg timestamp="20220510 22:07:30.446" level="INFO">Typing text 'kampar' into text field 'XPATH://*[@id="SearchBoxContainer"]/div[1]/div/div[2]/div/div/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20220510 22:07:30.445" endtime="20220510 22:07:30.866"/>
 </kw>
 <kw name="Get Window Titles" library="SeleniumLibrary">
 <doc>Returns and logs titles of all windows of the selected browser.</doc>
-<msg timestamp="20220510 21:36:06.699" level="INFO">Altogether 1 item.
-1: Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels</msg>
-<status status="PASS" starttime="20220510 21:36:06.273" endtime="20220510 21:36:06.699"/>
+<msg timestamp="20220510 22:07:32.732" level="INFO">Altogether 2 items.
+1: Settings
+2: Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels</msg>
+<status status="PASS" starttime="20220510 22:07:30.868" endtime="20220510 22:07:32.733"/>
 </kw>
 <kw name="Log Title" library="SeleniumLibrary">
 <doc>Logs and returns the title of the current page.</doc>
-<msg timestamp="20220510 21:36:06.743" level="INFO">Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels</msg>
-<status status="PASS" starttime="20220510 21:36:06.702" endtime="20220510 21:36:06.744"/>
+<msg timestamp="20220510 22:07:32.790" level="INFO">Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels</msg>
+<status status="PASS" starttime="20220510 22:07:32.738" endtime="20220510 22:07:32.791"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220510 21:36:06.779" level="INFO">Page title is 'Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels'.</msg>
-<status status="PASS" starttime="20220510 21:36:06.747" endtime="20220510 21:36:06.780"/>
+<msg timestamp="20220510 22:07:32.853" level="INFO">Page title is 'Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels'.</msg>
+<status status="PASS" starttime="20220510 22:07:32.794" endtime="20220510 22:07:32.854"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220510 21:36:06.783" endtime="20220510 21:36:10.171"/>
+<status status="PASS" starttime="20220510 22:07:32.857" endtime="20220510 22:07:35.595"/>
 </kw>
-<status status="PASS" starttime="20220510 21:35:51.236" endtime="20220510 21:36:10.173"/>
+<status status="PASS" starttime="20220510 22:07:16.363" endtime="20220510 22:07:35.598"/>
 </test>
-<status status="PASS" starttime="20220510 21:35:50.757" endtime="20220510 21:36:10.183"/>
+<status status="PASS" starttime="20220510 22:07:15.893" endtime="20220510 22:07:35.615"/>
 </suite>
 <statistics>
 <total>
